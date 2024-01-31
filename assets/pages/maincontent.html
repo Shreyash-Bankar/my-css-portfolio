@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    body{
+        background-image: url("../images/bg3.jpg");
+        display:flex;
+        flex-direction: column;
+    }
+    .main{
+        display:flex;
+        position:absolute;
+        align-items:center;
+        justify-content: space-around;
+        top:25%;
+        height: 50%;
+        
+    }
+    .mid{
+        width:33%;
+        font-size: 1.2rem;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        
+        
+    }
+    .left{
+        position:relative;
+        display:inline-flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        gap:230px;
+
+    }
+    
+    .animated-text{
+        
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: blue;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 103%;
+    background-color: rgb(216,216,216);
+    
+    border-left: 2px solid blue;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "a Coder";
+    }
+    21%,40%{
+        content: "a Programmer";
+    }
+    41%,60%{
+        content: "a Developer";
+    }
+    61%,80%{
+        content: "a Student";
+    }
+    81%,100%{
+        content: "an Engineer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+.footer{
+    position:absolute;
+    top:90%;
+    height: 10%;
+    width:100%;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+        <div class="animated-text">
+            I'm  <span></span>
+        </div>
+        <div class="name">
+        <h1>Shreyash Bankar</h1>
+        <div class="social-media">
+        <div><a href="https://www.linkedin.com/in/shreyash-bankar-28b304262/" target="_blank" ><img
+                            src="../images/linked in.png" width="20"></a> </div>         
+        <div><a href="https://github.com/Shreyash-Bankar" target="_blank" ><img src="../images/github.png"
+                                width="25"></a> </div>         
+        <div><a href="https://twitter.com/ShreyashBankar2" target="_blank" ><img src="../images/x.png"
+                                    width="20"></a> </div>     
+                                </div>    
+                            </div>  
+                        </div>
+    <div class="mid "><p>Hello there! Welcome to my online space. I'm Shreyash Bankar, a super enthusiastic programmer with a big goal: turning ideas into real things. Seriously, it's like my life's mission! Whether you're here to check out my cool projects, learn more about my journey, or maybe chat about working together, I'm so excited to have you here. Get ready for a fun ride!</p></div>    
+    <div class="right "><img src="../images/IMG-20231103-WA0023-removebg-preview.png"></div>    
+   
+</div>
+<div class="footer"><p>My Portfoio Website</p></div>
+      
+</body>
+</html>
